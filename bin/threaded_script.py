@@ -52,6 +52,8 @@ if __name__ == '__main__':
     dbOps = MongoHelper()
     # print(dbOps)
     dbOps.createDB()
+    # Clearing Dummy Database Entries
+    dbOps.clearCollections()
     dbOps.createCollections()
 
     workQueue = WorkerQueue(QueueType.HISTORY_QUEUE, history_batch_size)

@@ -135,6 +135,9 @@ if __name__ == "__main__":
     dbOps = MongoHelper()
     # print(dbOps)
     dbOps.createDB()
+    # Clearing Database Entries
+    dbOps.clearCollections()
+
     dbOps.createCollections()
     #
     database_benchmark(100000, batch_size, 100)
@@ -145,7 +148,7 @@ if __name__ == "__main__":
     for t in threads:
         t.join()
     # Clearing Dummy Database Entries
-    # dbOps.clearCollections()
+    dbOps.clearCollections()
     dbOps.close()
     sys.stdout.write("Exiting Main Thread\n")
     # total = time.time() - tic
