@@ -1,0 +1,13 @@
+__________ Thread-4 Demo  __________
+Data Base Connection Established........
+Starting Thread-1
+Starting Thread-2
+Starting Thread-3
+Starting Thread-4
+Exiting Thread-4
+Exiting Thread-1
+Exiting Thread-3
+Exiting Thread-2
+Exiting Main Thread
+Done processing 600000 lines of input
+Processed 600000 orders in 14.186 sec - avg: 42295 orders/second

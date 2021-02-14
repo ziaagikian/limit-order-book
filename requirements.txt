@@ -1,0 +1,4 @@
+setuptools >=50.3.0
+pytest >= 6.2.2
+pymongo>=3.11.3
+bintrees >=2.2.0
